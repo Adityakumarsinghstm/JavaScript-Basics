@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Part 1</title>
+</head>
+<body>
+    <p id="one"><span>Hello </span> Namste</p>
+    <ul>
+        <li class="tech">one</li>
+        <li class="tech">two</li>
+        <li class="tech">three</li>
+    </ul>
+    <h4>Hey</h4>
+    <h4>Namste</h4>
+    <h4>Hola</h4>
+
+    <h1>Raghu</h1>
+    <h2 class="classs">Murari</h2>
+    <h3 id="ids">Piyush</h3>
+
+    <script>
+        let var1 = document.getElementById("one")
+        console.log(var1.innerText)
+        let var2 = document.getElementsByClassName("tech")
+        console.log(var2[2].innerText)
+        var2[1].innerText="nodejs"
+
+        let var3 = document.getElementsByTagName("h4")
+        console.log(var3[2].innerText)
+        var3[2].innerText = "hello pw skills"
+        var3[2].style.color = "Red"
+
+        let var4 = document.querySelector(".classs")
+        console.log(var4)
+        //var4.style.color = "red"
+        // var4.className = "hello"
+        // var4.classList="mala pilo kilo"
+        var4.setAttribute("id","mahoo")
+        var4.setAttribute("title","aditya")
+    </script>
+</body>
+</html>

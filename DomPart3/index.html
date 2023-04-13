@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Part 3 </title>
+</head>
+<body>
+    <h1>welcome to PwSkills</h1>
+    <p id="js"></p>
+    <button ondblclick="hey()" id="jss">Submit</button>
+    <script>
+        let hello =()=>{
+            document.getElementById("js").innerText="Hello bachooon"
+
+        }
+        document.addEventListener("mouseenter", hello)
+        let hey=()=>
+        {
+            let var1 = document.getElementById("jss")
+            var1.innerText="namste"
+            var1.style.color="white"
+            var1.style.backgroundColor="black"
+            var1.style.padding="15px"
+            var1.style.border="10px solid red "
+            var1.style.borderRadius="14px"
+        }
+    </script>
+</body>
+</html>
