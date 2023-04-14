@@ -31,6 +31,7 @@ const above200 = gameScore.find((score) => score > 200)
 console.log(above200)
 
 
+console.log(Array.isArray(gameScore))
 //find index of
 //some 
 //sort
